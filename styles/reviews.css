@@ -1,0 +1,38 @@
+.reviews__header {
+  margin-bottom: 40px;
+}
+
+.review:not(:last-of-type) {
+  margin-bottom: 50px;
+}
+
+.review__photo {
+  height: 280px;
+  width: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 11px;
+}
+
+.photo-3 {
+  object-position: right;
+}
+
+.review__figure,
+.review__text {
+  display: inline-block;      
+}
+
+.review__figure {
+  margin-right: 20px;
+}
+
+.review__name {
+  text-align: center;
+}
+
+.review__text {
+  max-width: 680px;
+  vertical-align: top;
+  padding-top: 52px;
+}

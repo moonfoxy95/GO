@@ -1,0 +1,9 @@
+@import "./normalize.css";
+@import "./global_styles.css";
+@import "./present.css";
+@import "./rooms.css";
+@import "./booking.css";
+@import "./about.css";
+@import "./reviews.css";
+@import "./faq.css";
+@import "./footer.css";

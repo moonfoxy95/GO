@@ -1,0 +1,99 @@
+html {
+  box-sizing: border-box;
+  position: relative;  /* чтобы картинки случайно не выпали из html */
+}
+
+* {
+  box-sizing: inherit;
+}
+
+.font-size-s {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+body {  
+  min-width: 320px;  /* минимальная ширина старого смартфона */
+  min-height: 100vh;  /* body на всю высоту экрана, какой бы она ни была */
+
+  font-family: Arial, sans-serif; /* основной (любой) и обязательно запасной */
+  font-size: 16px; /* стандарт; зависит от макета */
+  font-weight: 400;  /* стандарт; зависит от макета */
+
+  color: #FFFFFF;  /* стандарт; зависит от макета */
+  background-color: #1B1A1B;  /* стандарт; зависит от макета */
+
+  /* из codeopen.io */
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.container {
+  max-width: 1440px;
+  padding-left: 130px;
+  padding-right: 130px;
+  margin: 0 auto;
+  border: 1px solid red;  /* удалить */
+}
+
+section,
+footer {
+  padding: 50px 0;
+}
+
+img, 
+svg {  /* картинка обязательно должна быть ограничена блоком, чтобы не выпадала */
+  display: block;  /* из codeopen.io */
+  max-width: 100%;  /* ширина родительского блока */
+  height: auto;  /* чтобы картинка не искажалась */
+}
+
+svg {
+  max-height: 100%;
+}
+
+button {
+  cursor: pointer;  /* по стандарту не прописан, но нужен */
+}
+
+a {
+  color: inherit;
+  text-decoration-line: none;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;  /* если точки будут нужны, прописывать через class */
+}
+
+li ~ li:last-child {
+  margin-bottom: 0px;
+}
+
+h1, h2, h3, h4, p, figure, fieldset {
+  margin: 0;
+}
+
+h2 {
+  margin-top: 0px;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.visually-hidden {  /* вместо hidden или display: none; и для отсутствующих заголовков */
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}

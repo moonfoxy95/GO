@@ -1,0 +1,51 @@
+.footer__header {
+  margin-bottom: 54px;
+}
+
+.contacts {
+  color: white;
+  text-decoration-line: none;
+  margin-bottom: 40px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;    
+}
+
+.adress__text {
+  white-space: pre-line;  
+}
+
+.adress__image {
+  position: relative;
+  bottom: 15px;
+}
+
+.adress {
+  margin-bottom: 40px;
+}
+
+.adress__image,
+.tel__image,
+.email__image {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+.adress__text,
+.tel__text,
+.email__text {
+  display: inline-block;
+}
+
+.tel {
+  margin-bottom: 0.4em;
+}
+
+.socials__item { 
+  display: inline-block; 
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 15px;
+}

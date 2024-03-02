@@ -1,0 +1,41 @@
+.present {
+  position: relative;
+  padding-top: 146px;
+}
+
+.present__title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  
+  background-image: url(../images/primary_images/man-vr.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 762px;
+  width: 675px;
+  right: 0px;
+  top: 65px;
+}
+
+.present__title {
+  position: relative;
+  font-size: 150px;
+  font-weight: 900;
+  letter-spacing:-0.1em;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  text-transform: uppercase;
+  line-height: 100%;
+}
+
+.present__subtitle {
+  margin-top: 0;
+  margin-left: 100px;
+  font-size: 28px;  
+}
+
+.present::after {
+  display: block;
+  content: "";
+  height: 647px;
+}
