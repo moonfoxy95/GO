@@ -7,11 +7,6 @@ html {
   box-sizing: inherit;
 }
 
-.font-size-s {
-  font-size: 20px;
-  line-height: 28px;
-}
-
 body {  
   min-width: 320px;  /* минимальная ширина старого смартфона */
   min-height: 100vh;  /* body на всю высоту экрана, какой бы она ни была */
@@ -34,14 +29,11 @@ body {
 
 .container {
   max-width: 1440px;
-  padding-left: 130px;
-  padding-right: 130px;
-  margin: 0 auto;
-  border: 1px solid red;  /* удалить */
+  padding: 0 130px; /* отступы от краев */  
+  margin: 0 auto; /* центризация по горизонтали */
 }
 
-section,
-footer {
+.main__section {
   padding: 50px 0;
 }
 
@@ -75,14 +67,23 @@ li ~ li:last-child {
   margin-bottom: 0px;
 }
 
-h1, h2, h3, h4, p, figure, fieldset {
+h1, 
+h2, 
+h3, 
+h4, 
+p, 
+figure, 
+fieldset, 
+blockquote {
   margin: 0;
 }
 
 h2 {
   margin-top: 0px;
+  margin-bottom: 40px;
   font-size: 40px;
   font-weight: 700;
+  line-height: 1.25em;
   text-transform: uppercase;
   text-align: center;
 }

@@ -1,9 +1,20 @@
-.reviews__header {
-  margin-bottom: 40px;
+.reviews__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;  
 }
 
-.review:not(:last-of-type) {
-  margin-bottom: 50px;
+.review__figure {
+  margin-right: 20px;
+}
+
+.review__figure,
+.review__text {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 1.4em;
+  overflow-wrap: normal;    
 }
 
 .review__photo {
@@ -14,17 +25,8 @@
   margin-bottom: 11px;
 }
 
-.photo-3 {
+.review__photo_photo-3 {
   object-position: right;
-}
-
-.review__figure,
-.review__text {
-  display: inline-block;      
-}
-
-.review__figure {
-  margin-right: 20px;
 }
 
 .review__name {

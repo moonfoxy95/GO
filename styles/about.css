@@ -1,51 +1,34 @@
-.about__title {
-  margin-bottom: 50px;
+/* about */
+
+.about__wrapper {
+  display: flex;
+  gap: 80px;  
 }
 
-.about__image-container {
-  margin-right: 80px;  
-  float: left;  
-  max-height: auto;
-  max-width: 600px;
-  padding-top: 5px;
-}
-
-.about__image-container,
 .about__info {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.about__info {  
-  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 500px;  
 }
 
 .about__text {
-  margin-bottom: 59px;
-}
-
-.about__p {
-  font-style: normal;
-  white-space: pre-line;
+  font-size: 20px;
+  line-height: 1.4em;
+  margin-bottom: 60px;  
 }
 
 .about__p:not(:last-child) {
-  margin-bottom: 1em;
+  margin-bottom: 1.8em;
 }
 
-.about__blockquote {
-  margin: 0;
-}
+/* quote */
 
 .quote__text { 
-  font-size: 44px; 
-  margin-bottom: 40px;
+  font-size: 44px;  
   text-transform: uppercase;
-  white-space: pre;  
-}
-
-.quote__text * {
-  font-weight: 400;
+  max-width: 450px;
+  white-space: pre-line;
+  margin-bottom: 40px;
 }
 
 .quote__text::before {
@@ -60,19 +43,30 @@
   font-weight: 900;
 }
 
-.quote__author-img {  
-  float: left;   
-  margin-right: 30px;  
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  object-position: right;
-  border-radius: 50%;
+.quote__span {
+  padding-left: 36.69px;
 }
 
-.quote__author-name {  
-  padding-top: 20px;
+.quote__author {    
   font-size: 20px;
-  font-style: normal;
-  white-space: pre-line;   
+  line-height: 1.4em;
+  max-width: 380px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.quote__author::before {
+  content: "";
+  display: block;
+  height: 80px;
+  width: 80px;
+  background-image: url(../images/characters/duck.jpeg);
+  background-position: -70px -5px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 30px;  
+}
+
+.quote__source {
+  font-style: inherit;
 }

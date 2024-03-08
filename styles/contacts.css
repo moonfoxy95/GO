@@ -1,0 +1,34 @@
+.info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.info__line {
+  display: flex;  
+  align-items: center;
+  gap: 30px;
+}
+
+.info__line_adress {
+  margin-bottom: 40px;
+}
+
+.info__text_white-space_pre-line {
+  white-space: pre-line;
+}
+
+.info__line_tel {
+  margin-bottom: 15px;
+}
+
+.info__line_email {
+  margin-bottom: 35px;
+}
+
+.socials {
+  display: flex;
+  gap: 28px;  
+}
