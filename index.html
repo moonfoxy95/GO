@@ -8,14 +8,96 @@
   <link rel="stylesheet" href="./styles/index.css">
 </head>
 
-<body class="page">
+<body class="page">  
+  <header class="header">  
+    <div class="container header__flex-container"> 
+      <a class="header__logo-link" href="#">
+        <svg class="header__logo" width="120.000000" height="66.000000" viewBox="0 0 120 66" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">  
+          <path d="M39.6553 32.5898L39.6553 40.0361L47.0527 40.0361L47.0527 43.4053Q44.8799 44.6992 43.1953 45.2363C42.0723 45.5944 40.8923 45.7734 39.6553 45.7734Q36.7965 45.7734 34.8531 44.4397Q34.141 43.951 33.5518 43.2832Q31.3789 40.793 31.3789 34.9824Q31.3789 29.5137 33.5273 26.999Q34.3527 26.0345 35.3895 25.4364Q37.082 24.46 39.3379 24.46Q41.7793 24.46 43.3418 25.5342Q43.7453 25.8074 44.0889 26.1421Q45.0963 27.1237 45.5879 28.6348L56.2568 26.7305Q55.2803 23.2637 53.3271 21.0176C52.0413 19.5039 50.4137 18.389 48.4443 17.6729Q45.5146 16.5986 39.582 16.5986Q33.4297 16.5986 29.792 18.332Q26.9518 19.7001 24.9449 21.847Q23.6568 23.225 22.7119 24.9238Q20.2949 29.2451 20.2949 35.1045Q20.2949 40.6709 22.4922 44.9678Q23.9854 47.8558 26.2838 49.7843Q27.405 50.7251 28.7178 51.4375Q32.7461 53.6104 39.1182 53.6104C42.5687 53.6104 45.5472 53.2116 48.0537 52.4141C50.5765 51.6003 53.4736 50.0784 56.7451 47.8486L56.7451 32.5898L39.6553 32.5898ZM65.6541 22.7694Q61.9209 27.4652 61.9209 35.1289C61.9209 39.3119 62.7428 42.7949 64.3867 45.5781Q66.3235 48.8573 69.1792 50.7508Q69.9592 51.2679 70.8076 51.6816C73.4606 52.9675 76.8053 53.6104 80.8418 53.6104C84.8131 53.6104 88.1253 52.8698 90.7783 51.3887C93.4476 49.8913 95.4821 47.8079 96.8818 45.1387Q99.0059 41.1104 99.0059 34.8359Q99.0059 27.3026 95.3331 22.7001Q94.7923 22.0224 94.1719 21.4082Q93.772 21.0104 93.3441 20.6454Q88.5987 16.5986 80.4023 16.5986Q72.8459 16.5986 68.1706 20.2688Q67.4532 20.8319 66.8037 21.4814Q66.1904 22.0948 65.6541 22.7694ZM74.9824 42.9658Q72.9805 40.5977 72.9805 35.1777C72.9805 31.5319 73.6559 28.9196 75.0068 27.3408C76.3577 25.762 78.1481 24.9727 80.3779 24.9727Q82.7152 24.9727 84.3959 26.0231Q85.2257 26.5417 85.8955 27.3164Q87.9463 29.6357 87.9463 34.6895C87.9463 38.6934 87.2953 41.4684 85.9932 43.0146C84.6911 44.5609 82.8519 45.334 80.4756 45.334Q78.2223 45.334 76.5775 44.3336Q75.6917 43.7948 74.9824 42.9658Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+          <path d="M1 34L0 34L0 66L51 66L51 65L1 65L1 34Z" fill="#CD06FF" fill-opacity="1.000000" fill-rule="evenodd"/>
+          <path d="M119 32L120 32L120 0L69 0L69 1L119 1L119 32Z" fill="#CD06FF" fill-opacity="1.000000" fill-rule="evenodd"/>
+        </svg>
+      </a>
+
+      <nav class="header__navigation">
+        <ul class="header__list">
+          <li class="header__item">
+            <a class="header__link" href="#rooms__title">залы</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#about__title">О нас</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#booking__title">Бронь</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#reviews__title">отзывы</a>
+          </li>
+          <li class="header__item">
+            <a class="header__link" href="#contacts__title">Контакты</a>
+          </li>    
+        </ul>
+      </nav>
+
+      <button class="header__button">Заказать звонок</button>
+    </div>
+  </header>
+
   <main class="main"> 
     <section class="main__section present"> 
       <div class="container">
         <h1 class="present__title">Game OveR</h1>
         <p class="present__subtitle">Новый формат игр и отдыха</p>
+
+        <div class="present__advantages advantages">
+          <p class="advantages__four">4</p>
+          <p class="advantages__halls">Тематических зала</p>
+          <p class="advantages__new">new</p>
+          <p class="advantages__apparature">Новейшая аппаратура</p>
+        </div>
+
+        <button class="present__button">Забронировать</button>
+
+        <svg class="present__down" width="97.000000" height="97.000000" viewBox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">	
+          <circle id="Ellipse 1" cx="48.500000" cy="48.500000" r="48.000000" stroke="#FFFFFF" stroke-opacity="1.000000" stroke-width="1.000000"/>
+          <rect id="Rectangle 23" x="34.425476" y="43.916199" width="1.820006" height="20.020063" transform="rotate(-44.9975 34.425476 43.916199)" fill="#FFFFFF" fill-opacity="1.000000"/>
+          <rect id="Rectangle 24" x="48.580688" y="58.073730" width="1.820006" height="20.020063" transform="rotate(-134.997 48.580688 58.073730)" fill="#FFFFFF" fill-opacity="1.000000"/>
+        </svg>
+
       </div>
     </section>
+
+
+    <section class="main__section entertainment">
+      <div class="container">
+        <h2 class="entertainment__title">У нас есть все для классного 
+          отдыха с друзьями!
+        </h2>
+
+        <ul class="entertainment__list">
+          <li class="entertainment__item vr">
+            <p class="entertainment__text">VR очки</p>
+          </li>
+          <li class="entertainment__item audio">
+            <p class="entertainment__text entertainment__text_white-space_pre-line">Аудио-система 5.1 
+              с отличным звуком</p>
+          </li>
+          <li class="entertainment__item karaoke">
+            <p class="entertainment__text">Караоке (4 микрофона)</p>
+          </li>
+          <li class="entertainment__item table-games">
+            <p class="entertainment__text">Настольные игры</p>
+          </li>
+          <li class="entertainment__item movie-services">
+            <p class="entertainment__text">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</p>
+          </li>
+          <li class="entertainment__item ps5">
+            <p class="entertainment__text">РlаyStаtiоn 5</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
 
     <section class="main__section rooms">
       <div class="container">
@@ -50,103 +132,136 @@
       </div>
     </section>
 
+
     <section class="main__section booking">
       <div class="container">
-        <h2 class="booking__title" id="booking__title">Забронировать</h2> 
-        <form class="booking__form" action="https://jsonplaceholder.typicode.com/posts" method="post" style="max-width: fit-content;">
+        <h2 class="booking__title" id="booking__title">Забронировать зал просто</h2> 
+        <form class="booking__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
           <div class="booking__form-inner">
-            <fieldset class="booking__set">
-              <legend class="booking__set-title">Выберите зал</legend>
-                <input class="booking__input booking__input-radio" type="radio" name="room-type" id="80's vibes">
-                <label for="80's vibes">80's vibes</label>
 
-                <input class="booking__input booking__input-radio" type="radio" name="room-type" id="star wars">
-                <label for="star wars">star wars</label>
-
-                <input class="booking__input booking__input-radio" type="radio" name="room-type" id="wild west">
-                <label for="wild west">wild west</label>
-
-                <input class="booking__input booking__input-radio" type="radio" name="room-type" id="neon style">
-                <label for="neon style">neon style</label>
+            <fieldset class="booking__hall hall">
+              <legend class="hall__title">Выберите зал</legend>
+              <button class="hall__button" type="button" >80’s vibes</button>
+              <button class="hall__button" type="button">Star wars</button>
+              <button class="hall__button" type="button">wild west</button>
+              <button class="hall__button" type="button">neon style</button>
             </fieldset>      
 
-            <fieldset class="booking__set">
-              <legend class="booking__set-title">Соберите набор развлечений</legend>
-                <fieldset class="booking__set">
-                  <legend class="booking__set-name">Приставка:</legend>
-                    <input class="booking__input booking__input-radio" type="radio" name="console-type" id="PlayStation 5">
-                    <label for="PlayStation 5">PlayStation 5</label>
+            <fieldset class="booking__services services">
+              <legend class="services__title">Соберите набор развлечений</legend>
 
-                    <input class="booking__input booking__input-radio" type="radio" name="console-type" id="Sega Mega Drive">
-                    <label for="Sega Mega Drive">Sega Mega Drive</label>
+                <fieldset class="service">
+                  <legend class="service__title">Приставка:</legend>
+                    <div class="sercive__line">
+                      <input class="service__input service-radio" type="radio" name="console-type" id="PlayStation 5">
+                      <label class="service__lable" for="PlayStation 5">PlayStation 5</label>
+                    </div>
 
-                    <input class="booking__input booking__input-radio" type="radio" name="console-type" id="X-box One S">
-                    <label for="X-box One S">X-box One S</label>
+                    <div class="sercive__line">
+                      <input class="service__input service-radio" type="radio" name="console-type" id="Sega Mega Drive">
+                      <label class="service__lable" for="Sega Mega Drive">Sega Mega Drive</label>
+                    </div>
 
-                    <input class="booking__input booking__input-radio" type="radio" name="console-type" id="Dendy">
-                    <label for="Dendy">Dendy</label>                    
+                    <div class="sercive__line">
+                      <input class="service__input service-radio" type="radio" name="console-type" id="X-box One S">
+                      <label class="service__lable" for="X-box One S">X-box One S</label>
+                    </div>
+
+                    <div class="sercive__line">
+                      <input class="service__input service-radio" type="radio" name="console-type" id="Dendy">
+                      <label class="service__lable" for="Dendy">Dendy</label>                    
+                    </div>
                 </fieldset>
 
-                <fieldset class="booking__set">
-                  <legend class="booking__set-title">Настольные игры</legend>
-                    <input class="booking__input booking__input-checkbox" type="checkbox" name="table-game-type" id="Jenga">
-                    <label for="Jenga">Jenga</label>
+                <fieldset class="service">
+                  <legend class="service__title">Настольные игры</legend>                    
+                    <div class="sercive__line">
+                      <input class="service__input service-checkbox" type="checkbox" name="table-game-type" id="Jenga">
+                      <label class="service__lable" for="Jenga">Jenga</label>
+                    </div>
 
-                    <input class="booking__input booking__input-checkbox" type="checkbox" name="table-game-type" id="Monopoly">
-                    <label for="Dendy">Dendy</label>
+                    <div class="sercive__line">
+                      <input class="service__input service-checkbox" type="checkbox" name="table-game-type" id="Monopoly">
+                      <label class="service__lable" for="Monopoly">Monopoly</label>
+                    </div>
 
-                    <input class="booking__input booking__input-checkbox" type="checkbox" name="table-game-type" id="Манчкин">
-                    <label for="Манчкин">Манчкин</label>
+                    <div class="sercive__line">
+                      <input class="service__input service-checkbox" type="checkbox" name="table-game-type" id="Манчкин">
+                      <label class="service__lable" for="Манчкин">Манчкин</label>
+                    </div>
 
-                    <input class="booking__input booking__input-checkbox" type="checkbox" name="table-game-type" id="Alias">
-                    <label for="Alias">Alias</label>
+                    <div class="sercive__line">
+                      <input class="service__input service-checkbox" type="checkbox" name="table-game-type" id="Alias">
+                      <label class="service__lable" for="Alias">Alias</label>
+                    </div>
                 </fieldset>
 
-                <fieldset class="booking__set">
-                  <legend class="booking__set-title">Дополнительно</legend>
-                    <input class="booking__input booking__input-checkbox" type="checkbox" name="addition-type" id="Караоке">
-                    <label for="Караоке">Караоке</label>
+                <fieldset class="service">
+                  <legend class="service__title">Дополнительно</legend>
+                    <div class="sercive__line">
+                      <input class="service__input service-checkbox" type="checkbox" name="addition-type" id="Караоке">
+                      <label class="service__lable" for="Караоке">Караоке</label>
+                    </div>
 
-                    <input class="booking__input booking__input-checkbox" type="checkbox" name="addition-type" id="VR">
-                    <label for="VR">VR</label>
+                    <div class="sercive__line">
+                      <input class="service__input service-checkbox" type="checkbox" name="addition-type" id="VR">
+                      <label class="service__lable" for="VR">VR</label>
+                    </div>
                 </fieldset>
             </fieldset>
 
-            <fieldset class="booking__set">
-              <legend class="booking__set-title">Выберите дату и время</legend>                  
-                <label for="booking-date">Дата</label>
-                <input class="booking__input booking__input-date" type="date" id="booking-date" name="booking-date">              
-
-                <label for="booking-time">Время</label>
-                <input class="booking__input booking__input-time" type="time" id="booking-time" name="booking-time">
-
-                <label for="booking-seats">Количество человек</label>
-                <input class="booking__input booking__input-seats" type="text" inputmode="numeric" id="booking-seats" name="booking-seat">                  
-
-                <label for="booking-name">Имя</label>
-                <input class="booking__input booking__input-name" type="text" id="booking-name" name="booking-name">                  
-
-                <label for="booking-surname">Фамилия</label>
-                <input class="booking__input booking__input-surname" type="text" id="booking-surname" name="booking-surname">                  
-
-                <label for="booking-tel">Телефон</label>
-                <input class="booking__input booking__input-tel" type="text" inputmode="tel" id="booking-tel" name="booking-tel" pattern="\^\+?[7-8]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}%\"
-                  placeholder="+7-XXX-XXX-XX-XX" title="+7-XXX-XXX-XX-XX">
+            <fieldset class="booking__entertainments data">
+              <legend class="data__title">Выберите дату и время</legend>  
+              <div class="data__flex-container">             
                 
-                <input class="booking__input" type="checkbox" id="booking-18-plus" name="booking-18-plus">
-                <label for="booking-18-plus">Я старше 18 лет</label>
+                <div class="data__line">
+                  <input class="data__input data__input_short data-date" type="date" name="booking-date">              
+                  <input class="data__input data__input_short data-time" type="time" name="booking-time">
+                </div>
+
+                <div>
+                  <select class="data__input data-seats" name="booking-seat"> 
+                    <option value="no">Сколько человек</option> 
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                  </select>                
+                </div>
+
+                <div class="data__block">
+                  <label class="data__label" for="name">Имя</label>
+                  <input class="data__input data-name" type="text" id="name" name="name">                  
+                </div>
+
+                <div class="data__block">
+                  <label class="data__label" for="surname">Фамилия</label>
+                  <input class="data__input data-surname" type="text" id="surname" name="surname">                  
+                </div>
+
+                <div class="data__block">
+                  <label class="data__label" for="tel">Телефон</label>
+                  <input class="data__input data-tel" type="text" inputmode="tel" id="tel" name="tel" pattern="\^\+?[7-8]-?[0-9]{3}-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}%\"
+                    placeholder="+7-XXX-XXX-XX-XX" title="+7-XXX-XXX-XX-XX"> 
+                </div>
+
+                <div class="data__block">
+                  <label class="data__label" for="email">Email</label>
+                  <input class="data__input data-email" type="email" inputmode="email" id="email" name="email"> 
+                </div>
+              </div>   
             </fieldset>
           </div>
           
           <div class="booking__form-outer">
             <button class="booking__button" type="submit">Забронировать</button>
-
-            <input class="booking__input booking__input-checkbox booking__data-approve" type="checkbox" id="data-approve" name="data-approve">
-            <label for="data-approve">Принимаю согласие на обработку данных и отдаю квартиру в ваши руки</label>
           </div>
         </form>                      
       </div>
     </section>    
+
     
     <section class="main__section about">
       <div class="container">          
@@ -182,6 +297,7 @@
         </div>           
       </div>
     </section>
+
 
     <section class="main__section reviews">
       <div class="container">        
@@ -221,101 +337,113 @@
       </div>
     </section> 
 
+
     <section class="main__section faq">
       <div class="container">
         <h2 class="faq__title" id="faq__title">Частые вопросы</h2>
         <ul class="faq__list">
-          <li class="faq__list-item">Можно ли забронировать комнату онлайн?</li>
-          <li class="faq__list-item">Могут ли мне вернуть деньги за бронь?</li>
-          <li class="faq__list-item">Какая комната самая популярная?</li>
-          <li class="faq__list-item">Как получить VIP карту?</li>
-          <li class="faq__list-item">Есть ли у Вас кафе?</li>
+          <li class="faq__item">
+            <p class="faq__question">Можно ли забронировать комнату онлайн?</p>
+          </li>
+          <li class="faq__item">
+            <p class="faq__question">Могут ли мне вернуть деньги за бронь?</p>
+          </li>
+          <li class="faq__item">
+            <p class="faq__question">Какая комната самая популярная?</p>
+          </li>
+          <li class="faq__item">
+            <p class="faq__question">Как получить VIP карту?</p>
+          </li>
+          <li class="faq__item">
+            <p class="faq__question">Есть ли у Вас кафе?</p>
+          </li>
         </ul>
       </div>
     </section>
+
+
+    <section class="main__section contacts">
+      <div class="container">
+        <h2 class="contacts__title" id="contacts__title">Контакты</h2>
+        <adress class="contacts__info info">               
+
+          <div class="info__wrapper">
+            <div class="info__line info__line_adress">
+              <svg class="info__svg adr" width="34.962952" height="32.000000" viewBox="0 0 34.963 32" fill="none">                  
+                <path d="M17.4814 0C11.338 0 6.21411 4.5293 6.21411 10.3125C6.21411 12.5127 6.93646 14.4746 8.32275 16.313L16.6192 28.1616C17.0217 28.7375 17.9421 28.7366 18.3438 28.1616L26.6762 16.2725C28.0327 14.5176 28.7488 12.4568 28.7488 10.3125C28.7488 4.62622 23.6943 0 17.4814 0ZM17.4814 15C14.6576 15 12.3599 12.897 12.3599 10.3125C12.3599 7.72803 14.6576 5.625 17.4814 5.625C20.3054 5.625 22.603 7.72803 22.603 10.3125C22.603 12.897 20.3054 15 17.4814 15Z" fill="#CD06FF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                <path d="M25.4891 21.5435L20.3313 28.9238C18.9962 30.8291 15.9593 30.8228 14.6306 28.9258L9.46442 21.5454C4.91895 22.5073 2.11688 24.2693 2.11688 26.375C2.11688 30.0288 10.0333 32 17.4814 32C24.9297 32 32.8461 30.0288 32.8461 26.375C32.8461 24.2678 30.04 22.5049 25.4891 21.5435Z" fill="#CD06FF" fill-opacity="1.000000" fill-rule="nonzero"/>
+              </svg>  
+              <p class="info__text info__text_white-space_pre-line">г. Москва 
+                ул. Аквамарина, 16
+              </p> 
+            </div>  
+
+            <div class="info__line info__line_tel">
+              <svg class="info__svg tel" width="34.962952" height="32.000000" viewBox="0 0 34.963 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path id="Vector" d="M29.1358 14.6653L32.0494 14.6653C32.0494 7.8252 26.4072 2.6665 18.9237 2.6665L18.9237 5.33325C24.8412 5.33325 29.1358 9.25708 29.1358 14.6653Z" fill="#CD06FF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                <path id="Vector" d="M18.9383 10.6667C22.002 10.6667 23.3087 11.8625 23.3087 14.6667L26.2222 14.6667C26.2222 10.3667 23.6365 8 18.9383 8L18.9383 10.6667ZM23.9235 17.9241C23.6435 17.6912 23.2757 17.5669 22.8976 17.5776C22.5195 17.5884 22.1607 17.7332 21.897 17.9814L18.4109 21.2627C17.5718 21.116 15.8849 20.6348 14.1484 19.0493C12.4119 17.4587 11.886 15.9106 11.7301 15.1479L15.3124 11.9561C15.5839 11.7148 15.7423 11.3865 15.754 11.0403C15.7657 10.6941 15.6298 10.3574 15.375 10.1013L9.99219 4.68408C9.7373 4.42725 9.38306 4.27124 9.0047 4.24976C8.62628 4.22803 8.2536 4.34229 7.96576 4.56812L4.8045 7.04932C4.55267 7.28076 4.40234 7.58862 4.38208 7.91455C4.36023 8.24805 3.94354 16.144 10.6331 22.2693C16.4691 27.6094 23.7792 28 25.7925 28C26.0868 28 26.2674 27.9919 26.3155 27.9893C26.6717 27.9712 27.0079 27.8328 27.2595 27.6013L29.9691 24.7065C30.216 24.4434 30.341 24.1023 30.3176 23.7561C30.2943 23.4097 30.1243 23.0854 29.8438 22.8521L23.9235 17.9241Z" fill="#CD06FF" fill-opacity="1.000000" fill-rule="nonzero"/>
+              </svg>
+              <p class="info__text">
+                <a href="tel:89509302893">8 (950) 930 - 28 - 93</a>
+              </p>
+            </div>
+
+            <div class="info__line info__line_email">
+              <svg class="info__svg email" width="34.962952" height="32.000000" viewBox="0 0 34.963 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path id="Vector" d="M0.729858 5.94727C5.52838 9.66675 13.9483 16.2102 16.423 18.2507C16.7552 18.5259 17.1116 18.666 17.4814 18.666C17.8506 18.666 18.2064 18.5273 18.5378 18.2532C21.0146 16.2109 29.4346 9.66675 34.2332 5.94727C34.5319 5.71606 34.5775 5.30981 34.3356 5.02734C33.7765 4.37427 32.9428 4 32.0493 4L2.91357 4C2.0202 4 1.18646 4.37427 0.627441 5.02734C0.385559 5.30981 0.431091 5.71606 0.729858 5.94727Z" fill="#CD06FF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                <path id="Vector" d="M34.5405 7.96313C34.2823 7.85303 33.9785 7.89136 33.7637 8.05933C28.4423 12.1882 21.6505 17.4807 19.5137 19.2429C18.3144 20.2339 16.6499 20.2339 15.4478 19.2417C13.1701 17.3635 5.54327 11.4292 1.19928 8.05933C0.982971 7.89136 0.678589 7.85425 0.422485 7.96289C0.165039 8.07251 0 8.30811 0 8.56787L0 25.3335C0 26.8042 1.3067 28.0002 2.91357 28.0002L32.0494 28.0002C33.6563 28.0002 34.963 26.8042 34.963 25.3335L34.963 8.56787C34.963 8.30811 34.7979 8.07178 34.5405 7.96313Z" fill="#CD06FF" fill-opacity="1.000000" fill-rule="nonzero"/>
+              </svg>  
+              <p class="info__text">
+                <a href="mailto:gameover@gmail.com?subject=Помощь&body=Здравствуйте">
+                  GameOver@gmail.com
+                </a>
+              </p>  
+            </div>
+
+            <ul class="contacts__list socials">
+              <li class="socials__item">
+                <a class="socials__link socials__link_vk" href="#">
+                  <svg class="socials__svg socials__svg_vk" width="48.000000" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path id="Vector" d="M24 0C10.745 0 0 10.7451 0 24C0 37.2549 10.745 48 24 48C37.255 48 48 37.2549 48 24C48 10.7451 37.255 0 24 0ZM33.23 27.0774C33.23 27.0774 35.3525 29.1726 35.875 30.145C35.89 30.165 35.8975 30.1851 35.9025 30.1951C36.115 30.5525 36.165 30.8301 36.06 31.0376C35.885 31.3826 35.285 31.5525 35.08 31.5674L31.33 31.5674C31.07 31.5674 30.525 31.5 29.865 31.0449C29.3575 30.6899 28.8575 30.1074 28.37 29.54C27.6425 28.6951 27.0125 27.9651 26.3775 27.9651C26.2969 27.9648 26.2167 27.9775 26.14 28.0024C25.66 28.1575 25.045 28.8425 25.045 30.6675C25.045 31.2375 24.595 31.5649 24.2775 31.5649L22.56 31.5649C21.975 31.5649 18.9275 31.3601 16.2275 28.5125C12.9225 25.0249 9.94751 18.03 9.92249 17.9651C9.73499 17.5125 10.1225 17.27 10.545 17.27L14.3325 17.27C14.8375 17.27 15.0025 17.5774 15.1175 17.8501C15.2525 18.1675 15.7475 19.4299 16.56 20.8501C17.8775 23.165 18.685 24.105 19.3325 24.105C19.4539 24.1035 19.5732 24.0728 19.68 24.0149C20.525 23.5449 20.3675 20.5325 20.33 19.9075C20.33 19.79 20.3275 18.5601 19.895 17.97C19.585 17.5425 19.0575 17.3799 18.7375 17.3201C18.867 17.1414 19.0377 16.9963 19.235 16.8975C19.815 16.6074 20.86 16.5649 21.8975 16.5649L22.475 16.5649C23.6 16.5801 23.89 16.6526 24.2975 16.7549C25.1225 16.9524 25.14 17.4851 25.0675 19.3076C25.045 19.825 25.0225 20.4099 25.0225 21.1001C25.0225 21.25 25.015 21.4099 25.015 21.5801C24.99 22.5076 24.96 23.5601 25.615 23.9924C25.7004 24.0461 25.7992 24.0747 25.9 24.075C26.1275 24.075 26.8125 24.075 28.6675 20.8926C29.2396 19.8682 29.7368 18.8037 30.155 17.7075C30.1925 17.6426 30.3025 17.4424 30.4325 17.365C30.5284 17.3162 30.6348 17.2913 30.7425 17.2925L35.195 17.2925C35.68 17.2925 36.0125 17.365 36.075 17.5525C36.185 17.8501 36.055 18.7576 34.0225 21.51L33.115 22.7075C31.2725 25.1226 31.2725 25.2451 33.23 27.0774Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                  </svg>                
+                </a>
+              </li>
+
+              <li class="socials__item">
+                <a class="socials__link socials__link_tg" href="#">
+                  <svg class="socials__svg socials__svg_tg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path id="Vector" d="M48 24C48 30.3652 45.4714 36.4697 40.9706 40.9705C36.4697 45.4714 30.3652 48 24 48C17.6348 48 11.5303 45.4714 7.02945 40.9705C2.52856 36.4697 0 30.3652 0 24C0 17.6348 2.52856 11.5303 7.02945 7.02954C11.5303 2.52856 17.6348 0 24 0C30.3652 0 36.4697 2.52856 40.9706 7.02954C45.4714 11.5303 48 17.6348 48 24ZM24.861 17.718C22.527 18.6899 17.859 20.7 10.863 23.748C9.729 24.198 9.13199 24.6421 9.078 25.074C8.98801 25.803 9.90302 26.0911 11.148 26.4839L11.673 26.6489C12.897 27.0481 14.547 27.5129 15.402 27.531C16.182 27.5491 17.049 27.231 18.006 26.571C24.543 22.158 27.918 19.929 28.128 19.8811C28.278 19.845 28.488 19.803 28.626 19.929C28.767 20.052 28.752 20.2891 28.737 20.3521C28.647 20.739 25.056 24.075 23.199 25.803C22.62 26.343 22.209 26.7241 22.125 26.811C21.94 27 21.752 27.186 21.561 27.3689C20.421 28.467 19.569 29.2891 21.606 30.6331C22.587 31.281 23.373 31.812 24.156 32.3459C25.008 32.928 25.86 33.5071 26.964 34.2329C27.243 34.4131 27.513 34.6079 27.774 34.7939C28.767 35.502 29.664 36.1379 30.765 36.0359C31.407 35.9761 32.07 35.376 32.406 33.5759C33.201 29.325 34.764 20.1179 35.124 16.323C35.146 16.0076 35.1329 15.6907 35.085 15.3779C35.0568 15.1257 34.9347 14.8933 34.743 14.7271C34.47 14.5386 34.1446 14.4409 33.813 14.448C32.913 14.4629 31.524 14.946 24.861 17.718Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                  </svg>                
+                </a>
+              </li>
+
+              <li class="socials__item">
+                <a class="socials__link socials__link_pin" href="#">
+                  <svg class="socials__svg socials__svg_pin" width="48" height="48" viewBox="0 0 50 50.0024" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path id="Vector" d="M25.0006 0C11.1949 0 0 11.1936 0 25.0007C0 35.2378 6.15576 44.0315 14.9648 47.8982C14.8942 46.1526 14.9513 44.0557 15.4 42.1589C15.8808 40.1282 18.6167 28.5359 18.6167 28.5359C18.6167 28.5359 17.818 26.9397 17.818 24.5808C17.818 20.8762 19.9654 18.1077 22.6385 18.1077C24.9122 18.1077 26.0109 19.8154 26.0109 21.8608C26.0109 24.1467 24.5538 27.5635 23.8038 30.7327C23.1769 33.386 25.134 35.5481 27.75 35.5481C32.4865 35.5481 35.6763 29.4648 35.6763 22.2559C35.6763 16.7783 31.9865 12.677 25.2744 12.677C17.6904 12.677 12.966 18.332 12.966 24.6487C12.966 26.8281 13.6083 28.3635 14.6147 29.5513C15.0769 30.0981 15.141 30.3179 14.9737 30.946C14.8539 31.4058 14.5782 32.5129 14.4648 32.9519C14.2987 33.5852 13.7859 33.8108 13.2128 33.5776C9.71988 32.1514 8.09296 28.3262 8.09296 24.0264C8.09296 16.9238 14.0821 8.40894 25.9603 8.40894C35.5058 8.40894 41.7878 15.3159 41.7878 22.7319C41.7878 32.5378 36.3353 39.8647 28.2981 39.8647C25.6 39.8647 23.0609 38.405 22.191 36.7488C22.191 36.7488 20.7397 42.5078 20.4327 43.6218C19.9026 45.5493 18.8647 47.4763 17.916 48.9768C20.2163 49.657 22.6025 50.0024 25.0013 50.0024C38.8064 50.0012 50 38.8071 50 25.0007C50 11.1936 38.8064 0 25.0006 0Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+                  </svg>                
+                </a>
+              </li>
+
+              <li class="socials__item">
+                <a class="socials__link socials__link_su" href="#">
+                  <svg class="socials__svg socials__svg_su" width="48" height="48" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                      <path id="Vector" d="M44.7441 9.66895C48.1583 14.0493 50.0085 19.446 49.9999 24.9998C49.9999 38.8049 38.805 49.9998 25.0005 49.9998C15.2871 49.9998 6.86594 44.4573 2.72748 36.3645L13.6236 36.3645C18.8159 36.3645 22.4428 33.5657 22.4428 29.092C22.4428 19.6106 11.505 23.4734 11.505 20.1086C11.505 18.4875 12.8057 17.8977 15.1858 17.8977L22.7691 17.8977C24.8711 17.8977 27.3435 18.2747 27.3435 20.5684L27.3435 28.124C27.3435 33.5952 31.6159 36.3638 36.0441 36.3638C40.548 36.3638 44.7435 33.5952 44.7435 28.124L44.7435 9.66895L44.7441 9.66895Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                      <path id="Vector" d="M25.0005 0C30.0173 -0.00708008 34.919 1.50269 39.0627 4.33081L39.0627 28.3013C39.0627 29.9629 37.7037 31.3225 36.0447 31.3225C34.3838 31.3225 33.0261 29.9629 33.0261 28.3013L33.0261 21.1187C33.0261 15.3845 30.1242 12.9993 26.3447 12.9993L14.0441 12.9993C9.59088 12.9993 5.89664 15.834 5.89664 20.3289C5.89664 22.6289 6.8819 25.9993 11.5415 26.8352C15.337 27.5186 16.8351 27.3198 16.8351 29.3506C16.8351 31.3225 14.6261 31.3225 11.7101 31.3225L0.808197 31.3225C0.269684 29.2581 -0.00198364 27.1333 -0.000152588 25C-0.000152588 11.198 11.196 0 25.0005 0Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
+                  </svg>                
+                </a>
+              </li>
+            </ul>          
+          </div>
+          
+          <div class="info__map">
+            <img src="./images/secondary_images/map.jpeg" alt="карта показывает как добраться">
+          </div> 
+          
+        </adress>
+      </div>
+    </section>
   </main>
-
-  <section class="main__section contacts">
-    <div class="container">
-      <h2 class="contacts__title" id="contacts__title">Контакты</h2>
-      <adress class="contacts__info info">               
-
-        <div class="info__wrapper">
-          <div class="info__line info__line_adress">
-            <svg class="info__svg adr" width="34.962952" height="32.000000" viewBox="0 0 34.963 32" fill="none">                  
-              <path d="M17.4814 0C11.338 0 6.21411 4.5293 6.21411 10.3125C6.21411 12.5127 6.93646 14.4746 8.32275 16.313L16.6192 28.1616C17.0217 28.7375 17.9421 28.7366 18.3438 28.1616L26.6762 16.2725C28.0327 14.5176 28.7488 12.4568 28.7488 10.3125C28.7488 4.62622 23.6943 0 17.4814 0ZM17.4814 15C14.6576 15 12.3599 12.897 12.3599 10.3125C12.3599 7.72803 14.6576 5.625 17.4814 5.625C20.3054 5.625 22.603 7.72803 22.603 10.3125C22.603 12.897 20.3054 15 17.4814 15Z" fill="#CD06FF" fill-opacity="1.000000" fill-rule="nonzero"/>
-              <path d="M25.4891 21.5435L20.3313 28.9238C18.9962 30.8291 15.9593 30.8228 14.6306 28.9258L9.46442 21.5454C4.91895 22.5073 2.11688 24.2693 2.11688 26.375C2.11688 30.0288 10.0333 32 17.4814 32C24.9297 32 32.8461 30.0288 32.8461 26.375C32.8461 24.2678 30.04 22.5049 25.4891 21.5435Z" fill="#CD06FF" fill-opacity="1.000000" fill-rule="nonzero"/>
-            </svg>  
-            <p class="info__text info__text_white-space_pre-line">г. Москва 
-              ул. Аквамарина, 16
-            </p> 
-          </div>  
-
-          <div class="info__line info__line_tel">
-            <svg class="info__svg tel" width="34.962952" height="32.000000" viewBox="0 0 34.963 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <path id="Vector" d="M29.1358 14.6653L32.0494 14.6653C32.0494 7.8252 26.4072 2.6665 18.9237 2.6665L18.9237 5.33325C24.8412 5.33325 29.1358 9.25708 29.1358 14.6653Z" fill="#CD06FF" fill-opacity="1.000000" fill-rule="nonzero"/>
-              <path id="Vector" d="M18.9383 10.6667C22.002 10.6667 23.3087 11.8625 23.3087 14.6667L26.2222 14.6667C26.2222 10.3667 23.6365 8 18.9383 8L18.9383 10.6667ZM23.9235 17.9241C23.6435 17.6912 23.2757 17.5669 22.8976 17.5776C22.5195 17.5884 22.1607 17.7332 21.897 17.9814L18.4109 21.2627C17.5718 21.116 15.8849 20.6348 14.1484 19.0493C12.4119 17.4587 11.886 15.9106 11.7301 15.1479L15.3124 11.9561C15.5839 11.7148 15.7423 11.3865 15.754 11.0403C15.7657 10.6941 15.6298 10.3574 15.375 10.1013L9.99219 4.68408C9.7373 4.42725 9.38306 4.27124 9.0047 4.24976C8.62628 4.22803 8.2536 4.34229 7.96576 4.56812L4.8045 7.04932C4.55267 7.28076 4.40234 7.58862 4.38208 7.91455C4.36023 8.24805 3.94354 16.144 10.6331 22.2693C16.4691 27.6094 23.7792 28 25.7925 28C26.0868 28 26.2674 27.9919 26.3155 27.9893C26.6717 27.9712 27.0079 27.8328 27.2595 27.6013L29.9691 24.7065C30.216 24.4434 30.341 24.1023 30.3176 23.7561C30.2943 23.4097 30.1243 23.0854 29.8438 22.8521L23.9235 17.9241Z" fill="#CD06FF" fill-opacity="1.000000" fill-rule="nonzero"/>
-            </svg>
-            <p class="info__text">
-              <a href="tel:89509302893">8 (950) 930 - 28 - 93</a>
-            </p>
-          </div>
-
-          <div class="info__line info__line_email">
-            <svg class="info__svg email" width="34.962952" height="32.000000" viewBox="0 0 34.963 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <path id="Vector" d="M0.729858 5.94727C5.52838 9.66675 13.9483 16.2102 16.423 18.2507C16.7552 18.5259 17.1116 18.666 17.4814 18.666C17.8506 18.666 18.2064 18.5273 18.5378 18.2532C21.0146 16.2109 29.4346 9.66675 34.2332 5.94727C34.5319 5.71606 34.5775 5.30981 34.3356 5.02734C33.7765 4.37427 32.9428 4 32.0493 4L2.91357 4C2.0202 4 1.18646 4.37427 0.627441 5.02734C0.385559 5.30981 0.431091 5.71606 0.729858 5.94727Z" fill="#CD06FF" fill-opacity="1.000000" fill-rule="nonzero"/>
-              <path id="Vector" d="M34.5405 7.96313C34.2823 7.85303 33.9785 7.89136 33.7637 8.05933C28.4423 12.1882 21.6505 17.4807 19.5137 19.2429C18.3144 20.2339 16.6499 20.2339 15.4478 19.2417C13.1701 17.3635 5.54327 11.4292 1.19928 8.05933C0.982971 7.89136 0.678589 7.85425 0.422485 7.96289C0.165039 8.07251 0 8.30811 0 8.56787L0 25.3335C0 26.8042 1.3067 28.0002 2.91357 28.0002L32.0494 28.0002C33.6563 28.0002 34.963 26.8042 34.963 25.3335L34.963 8.56787C34.963 8.30811 34.7979 8.07178 34.5405 7.96313Z" fill="#CD06FF" fill-opacity="1.000000" fill-rule="nonzero"/>
-            </svg>  
-            <p class="info__text">
-              <a href="mailto:gameover@gmail.com?subject=Помощь&body=Здравствуйте">
-                GameOver@gmail.com
-              </a>
-            </p>  
-          </div>
-
-          <ul class="contacts__list socials">
-            <li class="socials__item">
-              <a class="socials__link socials__link_vk" href="#">
-                <svg class="socials__svg socials__svg_vk" width="48.000000" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <path id="Vector" d="M24 0C10.745 0 0 10.7451 0 24C0 37.2549 10.745 48 24 48C37.255 48 48 37.2549 48 24C48 10.7451 37.255 0 24 0ZM33.23 27.0774C33.23 27.0774 35.3525 29.1726 35.875 30.145C35.89 30.165 35.8975 30.1851 35.9025 30.1951C36.115 30.5525 36.165 30.8301 36.06 31.0376C35.885 31.3826 35.285 31.5525 35.08 31.5674L31.33 31.5674C31.07 31.5674 30.525 31.5 29.865 31.0449C29.3575 30.6899 28.8575 30.1074 28.37 29.54C27.6425 28.6951 27.0125 27.9651 26.3775 27.9651C26.2969 27.9648 26.2167 27.9775 26.14 28.0024C25.66 28.1575 25.045 28.8425 25.045 30.6675C25.045 31.2375 24.595 31.5649 24.2775 31.5649L22.56 31.5649C21.975 31.5649 18.9275 31.3601 16.2275 28.5125C12.9225 25.0249 9.94751 18.03 9.92249 17.9651C9.73499 17.5125 10.1225 17.27 10.545 17.27L14.3325 17.27C14.8375 17.27 15.0025 17.5774 15.1175 17.8501C15.2525 18.1675 15.7475 19.4299 16.56 20.8501C17.8775 23.165 18.685 24.105 19.3325 24.105C19.4539 24.1035 19.5732 24.0728 19.68 24.0149C20.525 23.5449 20.3675 20.5325 20.33 19.9075C20.33 19.79 20.3275 18.5601 19.895 17.97C19.585 17.5425 19.0575 17.3799 18.7375 17.3201C18.867 17.1414 19.0377 16.9963 19.235 16.8975C19.815 16.6074 20.86 16.5649 21.8975 16.5649L22.475 16.5649C23.6 16.5801 23.89 16.6526 24.2975 16.7549C25.1225 16.9524 25.14 17.4851 25.0675 19.3076C25.045 19.825 25.0225 20.4099 25.0225 21.1001C25.0225 21.25 25.015 21.4099 25.015 21.5801C24.99 22.5076 24.96 23.5601 25.615 23.9924C25.7004 24.0461 25.7992 24.0747 25.9 24.075C26.1275 24.075 26.8125 24.075 28.6675 20.8926C29.2396 19.8682 29.7368 18.8037 30.155 17.7075C30.1925 17.6426 30.3025 17.4424 30.4325 17.365C30.5284 17.3162 30.6348 17.2913 30.7425 17.2925L35.195 17.2925C35.68 17.2925 36.0125 17.365 36.075 17.5525C36.185 17.8501 36.055 18.7576 34.0225 21.51L33.115 22.7075C31.2725 25.1226 31.2725 25.2451 33.23 27.0774Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
-                </svg>                
-              </a>
-            </li>
-
-            <li class="socials__item">
-              <a class="socials__link socials__link_tg" href="#">
-                <svg class="socials__svg socials__svg_tg" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <path id="Vector" d="M48 24C48 30.3652 45.4714 36.4697 40.9706 40.9705C36.4697 45.4714 30.3652 48 24 48C17.6348 48 11.5303 45.4714 7.02945 40.9705C2.52856 36.4697 0 30.3652 0 24C0 17.6348 2.52856 11.5303 7.02945 7.02954C11.5303 2.52856 17.6348 0 24 0C30.3652 0 36.4697 2.52856 40.9706 7.02954C45.4714 11.5303 48 17.6348 48 24ZM24.861 17.718C22.527 18.6899 17.859 20.7 10.863 23.748C9.729 24.198 9.13199 24.6421 9.078 25.074C8.98801 25.803 9.90302 26.0911 11.148 26.4839L11.673 26.6489C12.897 27.0481 14.547 27.5129 15.402 27.531C16.182 27.5491 17.049 27.231 18.006 26.571C24.543 22.158 27.918 19.929 28.128 19.8811C28.278 19.845 28.488 19.803 28.626 19.929C28.767 20.052 28.752 20.2891 28.737 20.3521C28.647 20.739 25.056 24.075 23.199 25.803C22.62 26.343 22.209 26.7241 22.125 26.811C21.94 27 21.752 27.186 21.561 27.3689C20.421 28.467 19.569 29.2891 21.606 30.6331C22.587 31.281 23.373 31.812 24.156 32.3459C25.008 32.928 25.86 33.5071 26.964 34.2329C27.243 34.4131 27.513 34.6079 27.774 34.7939C28.767 35.502 29.664 36.1379 30.765 36.0359C31.407 35.9761 32.07 35.376 32.406 33.5759C33.201 29.325 34.764 20.1179 35.124 16.323C35.146 16.0076 35.1329 15.6907 35.085 15.3779C35.0568 15.1257 34.9347 14.8933 34.743 14.7271C34.47 14.5386 34.1446 14.4409 33.813 14.448C32.913 14.4629 31.524 14.946 24.861 17.718Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
-                </svg>                
-              </a>
-            </li>
-
-            <li class="socials__item">
-              <a class="socials__link socials__link_pin" href="#">
-                <svg class="socials__svg socials__svg_pin" width="48" height="48" viewBox="0 0 50 50.0024" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                  <path id="Vector" d="M25.0006 0C11.1949 0 0 11.1936 0 25.0007C0 35.2378 6.15576 44.0315 14.9648 47.8982C14.8942 46.1526 14.9513 44.0557 15.4 42.1589C15.8808 40.1282 18.6167 28.5359 18.6167 28.5359C18.6167 28.5359 17.818 26.9397 17.818 24.5808C17.818 20.8762 19.9654 18.1077 22.6385 18.1077C24.9122 18.1077 26.0109 19.8154 26.0109 21.8608C26.0109 24.1467 24.5538 27.5635 23.8038 30.7327C23.1769 33.386 25.134 35.5481 27.75 35.5481C32.4865 35.5481 35.6763 29.4648 35.6763 22.2559C35.6763 16.7783 31.9865 12.677 25.2744 12.677C17.6904 12.677 12.966 18.332 12.966 24.6487C12.966 26.8281 13.6083 28.3635 14.6147 29.5513C15.0769 30.0981 15.141 30.3179 14.9737 30.946C14.8539 31.4058 14.5782 32.5129 14.4648 32.9519C14.2987 33.5852 13.7859 33.8108 13.2128 33.5776C9.71988 32.1514 8.09296 28.3262 8.09296 24.0264C8.09296 16.9238 14.0821 8.40894 25.9603 8.40894C35.5058 8.40894 41.7878 15.3159 41.7878 22.7319C41.7878 32.5378 36.3353 39.8647 28.2981 39.8647C25.6 39.8647 23.0609 38.405 22.191 36.7488C22.191 36.7488 20.7397 42.5078 20.4327 43.6218C19.9026 45.5493 18.8647 47.4763 17.916 48.9768C20.2163 49.657 22.6025 50.0024 25.0013 50.0024C38.8064 50.0012 50 38.8071 50 25.0007C50 11.1936 38.8064 0 25.0006 0Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
-                </svg>                
-              </a>
-            </li>
-
-            <li class="socials__item">
-              <a class="socials__link socials__link_su" href="#">
-                <svg class="socials__svg socials__svg_su" width="48" height="48" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <path id="Vector" d="M44.7441 9.66895C48.1583 14.0493 50.0085 19.446 49.9999 24.9998C49.9999 38.8049 38.805 49.9998 25.0005 49.9998C15.2871 49.9998 6.86594 44.4573 2.72748 36.3645L13.6236 36.3645C18.8159 36.3645 22.4428 33.5657 22.4428 29.092C22.4428 19.6106 11.505 23.4734 11.505 20.1086C11.505 18.4875 12.8057 17.8977 15.1858 17.8977L22.7691 17.8977C24.8711 17.8977 27.3435 18.2747 27.3435 20.5684L27.3435 28.124C27.3435 33.5952 31.6159 36.3638 36.0441 36.3638C40.548 36.3638 44.7435 33.5952 44.7435 28.124L44.7435 9.66895L44.7441 9.66895Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
-                    <path id="Vector" d="M25.0005 0C30.0173 -0.00708008 34.919 1.50269 39.0627 4.33081L39.0627 28.3013C39.0627 29.9629 37.7037 31.3225 36.0447 31.3225C34.3838 31.3225 33.0261 29.9629 33.0261 28.3013L33.0261 21.1187C33.0261 15.3845 30.1242 12.9993 26.3447 12.9993L14.0441 12.9993C9.59088 12.9993 5.89664 15.834 5.89664 20.3289C5.89664 22.6289 6.8819 25.9993 11.5415 26.8352C15.337 27.5186 16.8351 27.3198 16.8351 29.3506C16.8351 31.3225 14.6261 31.3225 11.7101 31.3225L0.808197 31.3225C0.269684 29.2581 -0.00198364 27.1333 -0.000152588 25C-0.000152588 11.198 11.196 0 25.0005 0Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="evenodd"/>
-                </svg>                
-              </a>
-            </li>
-          </ul>          
-        </div>
-        
-        <div class="info__map">
-          <img src="./images/secondary_images/map.jpeg" alt="карта показывает как добраться">
-        </div> 
-        
-      </adress>
-    </div>
-  </section>
 
   <footer class="footer">
     <div class="container footer__flex">

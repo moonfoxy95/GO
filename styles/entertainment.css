@@ -1,0 +1,62 @@
+.entertainment__list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+}
+
+.entertainment__item {
+  display: block;
+  flex-basis: 380px;
+  height: 228px;  
+}
+
+.vr {
+  background-image: url(../images/secondary_images/vr.jpeg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.audio {
+  background-image: url(../images/secondary_images/audio.jpg);
+  background-repeat: no-repeat;
+  object-fit: cover;  
+}
+
+.karaoke {
+  background-image: url(../images/secondary_images/micro.jpg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.table-games {
+  background-image: url(../images/secondary_images/game.jpg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.movie-services {
+  background-image: url(../images/secondary_images/netflix.jpg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.ps5 {
+  background-image: url(../images/secondary_images/sony.jpg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+.entertainment__text {
+  position: relative;
+  top: 73%;
+  left: 40px;
+  max-width: 300px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.entertainment__text_white-space_pre-line {
+  white-space: pre-line;
+}

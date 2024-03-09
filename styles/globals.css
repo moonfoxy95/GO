@@ -15,8 +15,8 @@ body {
   font-size: 16px; /* стандарт; зависит от макета */
   font-weight: 400;  /* стандарт; зависит от макета */
 
-  color: #FFFFFF;  /* стандарт; зависит от макета */
-  background-color: #1B1A1B;  /* стандарт; зависит от макета */
+  color: hsl(0, 0%, 100%);  /* стандарт; зависит от макета */
+  background-color: hsl(300, 2%, 10%);  /* стандарт; зависит от макета */
 
   /* из codeopen.io */
   position: relative;
@@ -78,14 +78,17 @@ blockquote {
   margin: 0;
 }
 
-h2 {
+h2 {  
   margin-top: 0px;
   margin-bottom: 40px;
   font-size: 40px;
   font-weight: 700;
   line-height: 1.25em;
   text-transform: uppercase;
+  max-width: 800px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .visually-hidden {  /* вместо hidden или display: none; и для отсутствующих заголовков */

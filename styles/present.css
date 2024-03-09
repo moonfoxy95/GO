@@ -1,6 +1,6 @@
-.present {
-  padding-top: 146px;
+.present {  
   display: flow-root;  
+  position: relative; /* для present__down */
 }
 
 .present__title {
@@ -30,4 +30,67 @@
 .present__subtitle {  
   padding-left: 100px;
   font-size: 28px; 
+  margin-bottom: 70px;
+}
+
+.advantages {
+  display: flex;
+  flex-direction: column-reverse; /* начинается снизу-слева, заканчивается справа-сверху */
+  flex-wrap: wrap;  
+  text-align: center;  
+  max-height: 209px;
+  margin-bottom: 150px;
+}
+
+.advantages__four {
+  font-size: 100px;
+  font-weight: 900;
+  line-height: 141px;
+  color: hsla(288,100%,51%,1);  
+  max-width: 200px;
+}
+
+.advantages__halls {
+  font-size: 30px;
+  line-height: 34px;  
+  max-width: 200px;
+
+  order: -1;
+}
+
+.advantages__new {
+  font-size: 75px;
+  font-weight: 900;
+  line-height: 106px;
+  color: hsla(288,100%,51%,1);  
+  max-width: 200px;
+
+  order: 1;
+}
+
+.advantages__apparature {
+  font-size: 30px;
+  line-height: 34px;
+  max-width: 200px;  
+}
+
+.present__button {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 26px;
+  color: hsla(0,0%,101%,1);
+  background-color: hsla(288,96%,27%,1);
+  border-radius: 10px;
+  border-color: transparent;
+  padding: 25px 70px;
+}
+
+.present__down {
+  position: absolute;
+  width: 97px;
+  height: 97px;
+  border-radius: 50%; /* чтобы нельзя было нажать на область вне закругления */
+  bottom: 135px;
+  left: 46.75%;
+  cursor: pointer;  
 }
