@@ -5,10 +5,14 @@
   gap: 40px 20px;
 }
 
-.entertainment__item {
-  display: block;
+.entertainment__item {  
   flex-basis: 380px;
-  height: 228px;  
+  height: 228px;
+  /* для текста внутри */  
+  display: flex;
+  align-items: end;
+  padding-left: 40px;
+  padding-bottom: 6px;
 }
 
 .vr {
@@ -47,16 +51,11 @@
   object-fit: cover;
 }
 
-.entertainment__text {
-  position: relative;
-  top: 73%;
-  left: 40px;
+.entertainment__text {  
   max-width: 300px;
   font-size: 20px;
   font-weight: 700;
   line-height: 28px;
-}
-
-.entertainment__text_white-space_pre-line {
   white-space: pre-line;
 }
+

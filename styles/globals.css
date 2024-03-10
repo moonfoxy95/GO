@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
   position: relative;  /* чтобы картинки случайно не выпали из html */
+  scroll-behavior: smooth;
 }
 
 * {
@@ -28,8 +29,8 @@ body {
 }
 
 .container {
-  max-width: 1440px;
-  padding: 0 130px; /* отступы от краев */  
+  max-width: 1240px;
+  padding: 0 30px; /* отступы от краев */  
   margin: 0 auto; /* центризация по горизонтали */
 }
 
@@ -76,6 +77,7 @@ figure,
 fieldset, 
 blockquote {
   margin: 0;
+  padding: 0;
 }
 
 h2 {  
