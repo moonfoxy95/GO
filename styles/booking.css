@@ -44,7 +44,7 @@
   line-height: 40px;
   background-color: hsl(0, 0%, 100%);
   color: black;
-  border: 2px solid transparent;
+  border: 3px solid transparent;
   border-radius: 8px;
   padding: 8px 15px;
   flex-basis: 250px;
@@ -91,6 +91,7 @@
   position: relative; /* чтобы прилипла кастомная галочка */
   margin-right: 12px;
   cursor: pointer;
+  border: 1px solid transparent;
 }
 
 .service-radio::before { /* белый фон */
@@ -105,12 +106,12 @@
 
 .service-radio::after { /* черный круг */
   content: "";
-  background-color: black;
+  background-color: black;  
   display: block;
   height: 15px;
   width: 15px;
   position: absolute;
-  right: 6.5px;
+  right: 6px;
   top: 6px;
   border-radius: 50%;
   opacity: 0;
@@ -217,8 +218,67 @@
   line-height: 28px;
   color: hsla(288,96%,27%,1);
   background-color: hsl(0, 0%, 100%);
-  border: none;
+  border: 3px solid transparent;
   border-radius: 10px;
   padding: 16px 50px;
   text-transform: uppercase;
+}
+
+/* states */
+
+.hall__label:hover {
+  background-color: hsla(288,29%,91%,1);
+  border-color: hsla(275,88%,33%,1);
+}
+
+.hall__label:focus {  /* не работает */
+  color: hsla(0,0%,1%,1);
+  border-color: hsla(275,88%,33%,1);
+}
+
+.hall__label:active {
+  color:hsl(0, 0%, 100%);
+  background-color: hsla(288,96%,27%,1);
+  border-color: hsl(0, 0%, 100%);
+}
+
+.hall__button:checked + .hall__label {  
+  color:hsl(0, 0%, 100%);
+  background-color: hsla(288,96%,27%,1);
+  border-color: hsl(0, 0%, 100%);  
+}
+
+
+
+.booking__button:hover {
+  background-color: hsla(288,29%,91%,1);
+  border-color: hsl(288, 97%, 27%);
+}
+
+.booking__button:focus {
+  border-color: hsl(288, 97%, 27%);
+  outline: transparent;
+}
+
+.booking__button:active {
+  background-color: hsl(288, 29%, 90%);
+  border-color: transparent;
+}
+
+
+
+.data__input:focus {
+  border: 2px solid hsl(288, 100%, 51%);;
+  outline: transparent;
+}
+
+
+
+.service-radio:focus {
+  outline: 1px solid rgb(205, 6, 255);    
+}
+
+
+.service-checkbox:focus {
+  outline: 1px solid rgb(205, 6, 255);
 }

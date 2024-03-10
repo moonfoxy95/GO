@@ -74,23 +74,69 @@
   max-width: 200px;  
 }
 
-.present__button {
+.present__button-link {
   font-size: 30px;
   font-weight: 700;
   line-height: 26px;
   color: hsla(0,0%,101%,1);
   background-color: hsla(288,96%,27%,1);
   border-radius: 10px;
-  border-color: transparent;
-  padding: 25px 70px;
+  border: transparent;
+  padding: 25px 70px;  
+}
+
+.present__down-link {
+  display: block;
+  position: absolute;
+  width: 97px;
+  height: 97px;  
+  bottom: 135px;
+  left: 46.75%;
+  cursor: pointer;   
+  outline: 1px solid transparent;
 }
 
 .present__down {
-  position: absolute;
-  width: 97px;
-  height: 97px;
-  border-radius: 50%; /* чтобы нельзя было нажать на область вне закругления */
-  bottom: 135px;
-  left: 46.75%;
-  cursor: pointer;  
+  border-radius: 50%;
+  border: 1px solid hsl(0, 0%, 100%); /* окантовка */
+  background-color: transparent; /* фон */  
+  stroke: hsl(0, 0%, 100%); /* внешняя часть стрелки v */
+  color: hsl(0, 0%, 100%) /* внутренняя часть стрелки v */
+}
+
+/* states */
+
+.present__button-link:hover {
+  background-color: hsla(288,88%,33%,1);
+}
+
+.present__button-link:focus {
+  background-color: hsla(288,88%,33%,1);
+  outline:transparent;
+}
+
+.present__button-link:active {
+  background-color: hsla(275,88%,33%,1);  
+}
+
+
+/* т.к. в отличие от соц сетей здесь требуется заливка
+background-color, приходится вкладывать классы */
+.present__down-link:hover > .present__down { 
+  stroke: hsl(288, 97%, 27%);  
+  color: hsl(288, 97%, 27%);
+  background-color: hsl(0, 0%, 100%);  
+}
+
+/* на svg сфокусироваться нельзя, 
+тут можно не вкладывать классы*/
+.present__down-link:focus { 
+  outline: 1px solid hsl(288, 100%, 51%);  
+}
+
+.present__down-link:active > .present__down{
+  background-color: hsl(288, 100%, 51%);
+  border: hsl(288, 100%, 51%);  
+  stroke: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 100%);
 }

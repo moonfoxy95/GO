@@ -1,33 +1,48 @@
 .faq__item {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background-color: hsl(0, 0%, 100%);
-  color: hsl(0, 4%, 11%);
+  justify-content: space-between;  
+  cursor: pointer;
   font-size: 24px;
   font-weight: 700;  
   line-height: 28px;
   padding: 30px 70px;
   margin-bottom: 20px;
+  color: hsl(0, 4%, 11%);
+  background-color: hsl(0, 0%, 100%);
 }
 
+/* кресты наследуют цвета */
 .faq__item:nth-of-type(even) {
-  background-color: hsl(288, 69%, 19%);
   color: hsl(0, 0%, 100%); 
+  background-color: hsl(288, 69%, 19%);  
 }
 
-.faq__item::after {
-  content:"";
-  display: block;  
-  cursor: pointer;
-  background-image: url(../images/secondary_images/open-purple.svg);
-  height: 45px;
-  width: 45px;
-  background-size: 45px;
+.faq__cross {  
   border-radius: 50%;
 }
 
-.faq__item:nth-of-type(even)::after {
-  background-image: url(../images/secondary_images/open.svg);
+/* states */
+/* stroke - крест без круга,
+если вызвать классом линии, то одна линия */
+
+.faq__item:nth-of-type(odd):hover { 
+  .faq__cross {
+    background-color: hsl(288, 97%, 27%);
+    stroke: hsl(0, 0%, 100%);
+  }
 }
 
+.faq__item:nth-of-type(even):hover { 
+  .faq__cross {
+    background-color: hsl(0, 0%, 100%);
+    stroke: hsl(288, 97%, 27%);
+  }
+}
+
+.faq__item:nth-of-type(odd):active,
+.faq__item:nth-of-type(even):active {
+  .cross__vertical {
+    stroke: transparent;
+  }
+}

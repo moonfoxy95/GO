@@ -32,3 +32,24 @@
   display: flex;
   gap: 28px;  
 }
+
+.socials__link { /* цвет всех иконок соцсетей (наследуется, можно удалить) */
+  display: block;
+  color: hsl(0, 0%, 100%);
+  outline: 1px solid transparent;
+}
+
+/* states */
+
+.socials__link:hover {  
+  color: hsl(288, 29%, 90%);
+}
+
+.socials__link:focus {
+  color: hsl(288, 29%, 90%);
+  outline-color: hsl(288, 100%, 51%);
+}
+
+.socials__link:active {
+  color: hsla(288,100%,51%,1);
+}
