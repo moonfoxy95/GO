@@ -37,6 +37,9 @@
   display: block;
   color: hsl(0, 0%, 100%);
   outline: 1px solid transparent;
+
+  transition-property: color, outline;
+  transition-duration: 1s, .5s;
 }
 
 /* states */

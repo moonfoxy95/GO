@@ -12,6 +12,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; /* для маленьких экранов */
+
+  border: 2px solid transparent;
+  transition-property: transform, border-color;
+  transition-duration: 1s, .6s;
 }
 
 .rooms__item_vibes {
@@ -45,4 +49,11 @@
   font-weight: 700;
   line-height: 80px;
   text-transform: uppercase;
+}
+
+/* states */
+
+.rooms__item:hover {
+  transform: scale(1.1);
+  border-color: red;
 }

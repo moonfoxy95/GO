@@ -20,6 +20,9 @@
 
 .faq__cross {  
   border-radius: 50%;
+
+  transition-property: background-color, opacity;
+  transition-duration: 1s;
 }
 
 /* states */
@@ -43,6 +46,6 @@
 .faq__item:nth-of-type(odd):active,
 .faq__item:nth-of-type(even):active {
   .cross__vertical {
-    stroke: transparent;
+    opacity: 0; /* или stroke: transparent */
   }
 }

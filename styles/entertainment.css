@@ -13,6 +13,10 @@
   align-items: end;
   padding-left: 40px;
   padding-bottom: 6px;
+
+  border: 2px solid transparent;  
+  transition-property: transform, border-color;
+  transition-duration: 1s, .6s;
 }
 
 .vr {
@@ -59,3 +63,9 @@
   white-space: pre-line;
 }
 
+/* states */
+
+.entertainment__item:hover {
+  transform: scale(1.1);
+  border-color: red;
+}

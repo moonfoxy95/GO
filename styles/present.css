@@ -83,6 +83,9 @@
   border-radius: 10px;
   border: transparent;
   padding: 25px 70px;  
+
+  transition-property: background-color;
+  transition-duration: 1s;
 }
 
 .present__down-link {
@@ -94,6 +97,9 @@
   left: 46.75%;
   cursor: pointer;   
   outline: 1px solid transparent;
+
+  transition-property: outline-color;
+  transition-duration: .5s;
 }
 
 .present__down {
@@ -101,7 +107,10 @@
   border: 1px solid hsl(0, 0%, 100%); /* окантовка */
   background-color: transparent; /* фон */  
   stroke: hsl(0, 0%, 100%); /* внешняя часть стрелки v */
-  color: hsl(0, 0%, 100%) /* внутренняя часть стрелки v */
+  color: hsl(0, 0%, 100%); /* внутренняя часть стрелки v */
+
+  transition-property: background-color, border-color, color, stroke;
+  transition-duration: 1s;
 }
 
 /* states */
@@ -112,7 +121,7 @@
 
 .present__button-link:focus {
   background-color: hsla(288,88%,33%,1);
-  outline:transparent;
+  outline: transparent;
 }
 
 .present__button-link:active {
@@ -131,7 +140,7 @@ background-color, приходится вкладывать классы */
 /* на svg сфокусироваться нельзя, 
 тут можно не вкладывать классы*/
 .present__down-link:focus { 
-  outline: 1px solid hsl(288, 100%, 51%);  
+  outline-color: hsl(288, 100%, 51%);  
 }
 
 .present__down-link:active > .present__down{

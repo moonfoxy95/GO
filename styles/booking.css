@@ -52,6 +52,9 @@
   text-align: center; 
   /* white-space = white-space-collapse + text-wrap */  
   text-wrap: nowrap; /* запрет переноса */  
+
+  transition-property: color, background-color, border-color;
+  transition-duration: 1s;
 }
 
 /* services */
@@ -222,6 +225,9 @@
   border-radius: 10px;
   padding: 16px 50px;
   text-transform: uppercase;
+
+  transition-property: background-color, border-color;
+  transition-duration: 1s;
 }
 
 /* states */
