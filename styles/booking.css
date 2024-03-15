@@ -42,7 +42,7 @@
   font-size: 30px;
   font-weight: 700;
   line-height: 40px;
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--main-color);
   color: black;
   border: 3px solid transparent;
   border-radius: 8px;
@@ -104,7 +104,7 @@
   height: 27px;
   width: 27px;
   border-radius: 50%;
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--main-color);
 }
 
 .service-radio::after { /* черный круг */
@@ -126,7 +126,7 @@
   vertical-align: middle;
   height: 25px;
   width: 25px;
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--main-color);
 }
 
 .service-checkbox::after { /* черный квадрат */
@@ -219,8 +219,8 @@
   font-size: 22px;
   font-weight: 700;
   line-height: 28px;
-  color: hsla(288,96%,27%,1);
-  background-color: hsl(0, 0%, 100%);
+  color: var(--violet);
+  background-color: var(--main-color);
   border: 3px solid transparent;
   border-radius: 10px;
   padding: 16px 50px;
@@ -233,7 +233,7 @@
 /* states */
 
 .hall__label:hover {
-  background-color: hsla(288,29%,91%,1);
+  background-color: var(--grey);
   border-color: hsla(275,88%,33%,1);
 }
 
@@ -243,38 +243,38 @@
 }
 
 .hall__label:active {
-  color:hsl(0, 0%, 100%);
-  background-color: hsla(288,96%,27%,1);
-  border-color: hsl(0, 0%, 100%);
+  color:var(--main-color);
+  background-color: var(--violet);
+  border-color: var(--main-color);
 }
 
 .hall__button:checked + .hall__label {  
-  color:hsl(0, 0%, 100%);
-  background-color: hsla(288,96%,27%,1);
-  border-color: hsl(0, 0%, 100%);  
+  color:var(--main-color);
+  background-color: var(--violet);
+  border-color: var(--main-color);  
 }
 
 
 
 .booking__button:hover {
-  background-color: hsla(288,29%,91%,1);
-  border-color: hsl(288, 97%, 27%);
+  background-color: var(--grey);
+  border-color: var(--violet);
 }
 
 .booking__button:focus {
-  border-color: hsl(288, 97%, 27%);
+  border-color: var(--violet);
   outline: transparent;
 }
 
 .booking__button:active {
-  background-color: hsl(288, 29%, 90%);
+  background-color: var(--grey);
   border-color: transparent;
 }
 
 
 
 .data__input:focus {
-  border: 2px solid hsl(288, 100%, 51%);;
+  border: 2px solid var(--pink);
   outline: transparent;
 }
 

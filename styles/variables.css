@@ -1,0 +1,6 @@
+:root {
+  --main-color: hsl(0, 0%, 100%);
+  --pink: hsla(288,100%,51%,1);  
+  --grey:hsl(288, 29%, 90%);
+  --violet: hsl(288, 97%, 27%);
+}

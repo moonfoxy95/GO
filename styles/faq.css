@@ -9,12 +9,12 @@
   padding: 30px 70px;
   margin-bottom: 20px;
   color: hsl(0, 4%, 11%);
-  background-color: hsl(0, 0%, 100%);
+  background-color: var(--main-color);
 }
 
 /* кресты наследуют цвета */
 .faq__item:nth-of-type(even) {
-  color: hsl(0, 0%, 100%); 
+  color: var(--main-color); 
   background-color: hsl(288, 69%, 19%);  
 }
 
@@ -31,21 +31,21 @@
 
 .faq__item:nth-of-type(odd):hover { 
   .faq__cross {
-    background-color: hsl(288, 97%, 27%);
-    stroke: hsl(0, 0%, 100%);
+    background-color: var(--violet);
+    stroke: var(--main-color);
   }
 }
 
 .faq__item:nth-of-type(even):hover { 
   .faq__cross {
-    background-color: hsl(0, 0%, 100%);
-    stroke: hsl(288, 97%, 27%);
+    background-color: var(--main-color);
+    stroke: var(--violet);
   }
 }
 
 .faq__item:nth-of-type(odd):active,
 .faq__item:nth-of-type(even):active {
   .cross__vertical {
-    opacity: 0; /* или stroke: transparent */
+    opacity: 0; /* или stroke: transparent */     
   }
 }

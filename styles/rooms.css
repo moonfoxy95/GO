@@ -56,4 +56,5 @@
 .rooms__item:hover {
   transform: scale(1.1);
   border-color: red;
+  z-index: 1; /* чтобы border не проваливался под другие элементы при убирании с них hover */
 }

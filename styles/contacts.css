@@ -1,3 +1,18 @@
+.contacts {
+  position: relative;
+}
+
+.contacts::before { /* градиент */
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-image: linear-gradient(hsla(300,1%,11%,1), hsla(300,69%,13%,1));
+  display: block;
+  width: 100%;
+  /* (contacts - padding-top) + footer */
+  height: calc((464px - 50px) + 142px);
+}
+
 .info {
   display: flex;
   justify-content: space-between;
@@ -35,7 +50,7 @@
 
 .socials__link { /* цвет всех иконок соцсетей (наследуется, можно удалить) */
   display: block;
-  color: hsl(0, 0%, 100%);
+  color: var(--main-color);
   outline: 1px solid transparent;
 
   transition-property: color, outline;
@@ -45,14 +60,14 @@
 /* states */
 
 .socials__link:hover {  
-  color: hsl(288, 29%, 90%);
+  color: var(--grey);
 }
 
 .socials__link:focus {
-  color: hsl(288, 29%, 90%);
-  outline-color: hsl(288, 100%, 51%);
+  color: var(--grey);
+  outline-color: var(--pink);
 }
 
 .socials__link:active {
-  color: hsla(288,100%,51%,1);
+  color: var(--pink);
 }

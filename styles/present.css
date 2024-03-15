@@ -46,7 +46,7 @@
   font-size: 100px;
   font-weight: 900;
   line-height: 141px;
-  color: hsla(288,100%,51%,1);  
+  color: var(--pink);  
   max-width: 200px;
 }
 
@@ -62,7 +62,7 @@
   font-size: 75px;
   font-weight: 900;
   line-height: 106px;
-  color: hsla(288,100%,51%,1);  
+  color: var(--pink);  
   max-width: 200px;
 
   order: 1;
@@ -79,7 +79,7 @@
   font-weight: 700;
   line-height: 26px;
   color: hsla(0,0%,101%,1);
-  background-color: hsla(288,96%,27%,1);
+  background-color: var(--violet);
   border-radius: 10px;
   border: transparent;
   padding: 25px 70px;  
@@ -104,10 +104,10 @@
 
 .present__down {
   border-radius: 50%;
-  border: 1px solid hsl(0, 0%, 100%); /* окантовка */
+  border: 1px solid var(--main-color); /* окантовка */
   background-color: transparent; /* фон */  
-  stroke: hsl(0, 0%, 100%); /* внешняя часть стрелки v */
-  color: hsl(0, 0%, 100%); /* внутренняя часть стрелки v */
+  stroke: var(--main-color); /* внешняя часть стрелки v */
+  color: var(--main-color); /* внутренняя часть стрелки v */
 
   transition-property: background-color, border-color, color, stroke;
   transition-duration: 1s;
@@ -132,20 +132,20 @@
 /* т.к. в отличие от соц сетей здесь требуется заливка
 background-color, приходится вкладывать классы */
 .present__down-link:hover > .present__down { 
-  stroke: hsl(288, 97%, 27%);  
-  color: hsl(288, 97%, 27%);
-  background-color: hsl(0, 0%, 100%);  
+  stroke: var(--violet);  
+  color: var(--violet);
+  background-color: var(--main-color);  
 }
 
 /* на svg сфокусироваться нельзя, 
 тут можно не вкладывать классы*/
 .present__down-link:focus { 
-  outline-color: hsl(288, 100%, 51%);  
+  outline-color: var(--pink);  
 }
 
 .present__down-link:active > .present__down{
-  background-color: hsl(288, 100%, 51%);
-  border: hsl(288, 100%, 51%);  
-  stroke: hsl(0, 0%, 100%);
-  color: hsl(0, 0%, 100%);
+  background-color: var(--pink);
+  border: var(--pink);  
+  stroke: var(--main-color);
+  color: var(--main-color);
 }

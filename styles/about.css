@@ -33,13 +33,13 @@
 
 .quote__text::before {
   content:"“ ";
-  color: hsla(288,96%,27%,1);
+  color: var(--violet);
   font-weight: 900;
 }
 
 .quote__text::after {
   content:" ”";
-  color: hsla(288,96%,27%,1);
+  color: var(--violet);
   font-weight: 900;
 }
 
